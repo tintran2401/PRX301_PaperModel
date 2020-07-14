@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/D:/CN8/XML/XMLProject/web/WEB-INF/config/mapping-categories.xsd" uri="src/conf/xml-resources/jaxb/Category/mapping-categories.xsd"/>
+    <system systemId="file:/D:/CN8/XML/XMLProject/web/WEB-INF/config/estimation-for-model.xsd" uri="src/conf/xml-resources/jaxb/DifficultyEstimate/estimation-for-model.xsd"/>
+</catalog>

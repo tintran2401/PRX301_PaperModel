@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<categoryMappings
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns='http://www.titiisme.com/schema/mapping-categories'
+    xsi:schemaLocation='http://www.titiisme.com/schema/mapping-categories mapping-categories.xsd'
+>
+    <categoryMapping>
+        <name>Anime - Game</name>
+        <mapping>Anime – Game</mapping>
+        <mapping>Anime</mapping>
+        <mapping>Game</mapping>
+    </categoryMapping>
+    <categoryMapping>
+        <name>Đồ vật – Đồ chơi</name>
+        <mapping>Đồ vật – Đồ chơi</mapping>
+    </categoryMapping>
+    <categoryMapping>
+        <name>Phương tiện</name>
+        <mapping>Phương tiện</mapping>
+        <mapping>Transportation</mapping>
+    </categoryMapping>
+    <categoryMapping>
+        <name>Kiến trúc</name>
+        <mapping>Kiến trúc</mapping>
+        <mapping>Diorama</mapping>
+    </categoryMapping>
+    <categoryMapping>
+        <name>Lễ hội</name>
+        <mapping>Lễ hội</mapping>
+    </categoryMapping>
+    <categoryMapping>
+        <name>Động – Thực vật</name>
+        <mapping>Động – Thực vật</mapping>
+        <mapping>Animal</mapping>
+    </categoryMapping>
+    <categoryMapping>
+        <name>Nhân vật</name>
+        <mapping>Người nổi tiếng</mapping>
+        <mapping>Movie and TV</mapping>
+    </categoryMapping>
+    <categoryMapping>
+        <name>Minecraft</name>
+        <mapping>Minecraft</mapping>
+    </categoryMapping>
+    <categoryMapping>
+        <name>Hoạt hình</name>
+        <mapping>Cartoon</mapping>
+    </categoryMapping>
+    <categoryMapping>
+        <name>Khác</name>
+        <mapping>Other</mapping>
+    </categoryMapping>
+</categoryMappings>

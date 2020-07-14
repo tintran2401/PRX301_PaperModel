@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<model-estimation
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns='http://www.titiisme.com/schema/estimation-for-model'
+    xsi:schemaLocation='http://www.titiisme.com/schema/estimation-for-model estimation-for-model.xsd'>
+    <difficulty-estimation>
+        <max-parts-per-sheet>1</max-parts-per-sheet>
+        <max-number-of-sheets>1</max-number-of-sheets>
+        <difficulty>1</difficulty>
+    </difficulty-estimation>
+    
+    <difficulty-estimation>
+        <max-parts-per-sheet>2</max-parts-per-sheet>
+        <max-number-of-sheets>2</max-number-of-sheets>
+        <difficulty>2</difficulty>
+    </difficulty-estimation>
+    
+    <difficulty-estimation>
+        <max-parts-per-sheet>3.5</max-parts-per-sheet>
+        <max-number-of-sheets>3</max-number-of-sheets>
+        <difficulty>3</difficulty>
+    </difficulty-estimation>
+    
+    <difficulty-estimation>
+        <max-parts-per-sheet>5</max-parts-per-sheet>
+        <max-number-of-sheets>5</max-number-of-sheets>
+        <difficulty>4</difficulty>
+    </difficulty-estimation>
+    
+    <difficulty-estimation>
+        <max-parts-per-sheet>7.25</max-parts-per-sheet>
+        <max-number-of-sheets>7</max-number-of-sheets>
+        <difficulty>5</difficulty>
+    </difficulty-estimation>
+    
+    <difficulty-estimation>
+        <max-parts-per-sheet>9.5</max-parts-per-sheet>
+        <max-number-of-sheets>10</max-number-of-sheets>
+        <difficulty>6</difficulty>
+    </difficulty-estimation>
+    
+    <difficulty-estimation>
+        <max-parts-per-sheet>12.25</max-parts-per-sheet>
+        <max-number-of-sheets>17</max-number-of-sheets>
+        <difficulty>7</difficulty>
+    </difficulty-estimation>
+    
+    <difficulty-estimation>
+        <max-parts-per-sheet>15</max-parts-per-sheet>
+        <max-number-of-sheets>25</max-number-of-sheets>
+        <difficulty>8</difficulty>
+    </difficulty-estimation>
+    
+    <difficulty-estimation>
+        <max-parts-per-sheet>30</max-parts-per-sheet>
+        <max-number-of-sheets>50</max-number-of-sheets>
+        <difficulty>9</difficulty>
+    </difficulty-estimation>
+    
+    <difficulty-estimation>
+        <max-parts-per-sheet>100000</max-parts-per-sheet>
+        <max-number-of-sheets>100000</max-number-of-sheets>
+        <difficulty>10</difficulty>
+    </difficulty-estimation>
+    
+    <default-parts-per-sheet>8.4</default-parts-per-sheet>
+</model-estimation>

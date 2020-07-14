@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://www.titiisme.com/schema/estimation-for-model"
+           targetNamespace="http://www.titiisme.com/schema/estimation-for-model"
+           elementFormDefault="qualified">
+    <xs:element name="model-estimation" type="ModelEstimation"/>
+    <xs:complexType name="ModelEstimation">
+        <xs:sequence>
+            <xs:element name="difficulty-estimation" type="DifficultyEstimation" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="default-parts-per-sheet" type="xs:decimal" default="8.4"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DifficultyEstimation">
+        <xs:sequence>
+            <xs:element name="max-parts-per-sheet" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="max-number-of-sheets" type="xs:positiveInteger" minOccurs="0"/>
+            <xs:element name="difficulty" type="xs:positiveInteger"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
