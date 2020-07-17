@@ -22,7 +22,7 @@ import tintt.utils.DBUtils;
  */
 public class ModelDAO extends BaseDAO<Model, Integer> {
 
-    private ModelDAO() {
+    public ModelDAO() {
 
     }
     private static ModelDAO instance;
@@ -35,6 +35,24 @@ public class ModelDAO extends BaseDAO<Model, Integer> {
             }
         }
         return instance;
+    }
+
+    public List<Model> getAllModels() {
+        EntityManager em = DBUtils.getEntityManager();
+        try {
+            EntityTransaction transaction = em.getTransaction();
+            transaction.begin();
+            List<Model> models = em.createNamedQuery("Model.findAll")
+                    .getResultList();
+            return models;
+        } catch (Exception e) {
+            Logger.getLogger(ModelDAO.class.getName()).log(Level.SEVERE, null, e);
+        } finally {
+            if (em != null) {
+                em.close();
+            }
+        }
+        return null;
     }
 
     public Model getModelByLink(String link) {

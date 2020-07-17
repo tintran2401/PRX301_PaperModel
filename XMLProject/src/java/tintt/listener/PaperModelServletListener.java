@@ -5,11 +5,14 @@
  */
 package tintt.listener;
 
+import java.util.List;
 import javax.persistence.EntityManager;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
+import tintt.dao.ModelDAO;
 import tintt.difficulti_estimation.ModelEstimation;
+import tintt.entities.Model;
 import tintt.kit168.KitThread;
 import tintt.mapping_categories.CategoryMappings;
 import tintt.papermuseum.PaperMusThread;
@@ -35,8 +38,9 @@ public class PaperModelServletListener implements ServletContextListener {
         context.setAttribute("CATEGORY_MAPPINGS", categoryMappings);
         ModelEstimation modelEstimation = getModelEstimationConfig(realPath);
         context.setAttribute("MODEL_ESTIMATION", modelEstimation);
-        paperMusThread = new PaperMusThread(context);
-        paperMusThread.start();
+
+//        paperMusThread = new PaperMusThread(context);
+//        paperMusThread.start();
 //        kidThread = new KitThread(context);
 //        kidThread.start();
         System.out.println("Went context!");
@@ -57,5 +61,10 @@ public class PaperModelServletListener implements ServletContextListener {
 
     private ModelEstimation getModelEstimationConfig(String realPath) {
         return ModelEstimation.getModelEstimation(realPath);
+    }
+
+    private List<Model> getAllModels() {
+        ModelDAO modelDAO = ModelDAO.getInstance();
+        return modelDAO.getAllModels();
     }
 }

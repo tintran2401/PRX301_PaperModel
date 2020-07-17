@@ -6,7 +6,7 @@ import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 import tintt.entities.Model;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2020-07-14T00:42:21")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2020-07-16T22:36:24")
 @StaticMetamodel(Category.class)
 public class Category_ { 
 

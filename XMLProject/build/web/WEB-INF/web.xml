@@ -4,9 +4,28 @@
         <description>ServletContextListener</description>
         <listener-class>tintt.listener.PaperModelServletListener</listener-class>
     </listener>
+    <servlet>
+        <servlet-name>SearchController</servlet-name>
+        <servlet-class>tintt.controller.SearchController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewDetailController</servlet-name>
+        <servlet-class>tintt.controller.ViewDetailController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchController</servlet-name>
+        <url-pattern>/SearchController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewDetailController</servlet-name>
+        <url-pattern>/ViewDetailController</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
+    <welcome-file-list>
+        <welcome-file>home.jsp</welcome-file>
+    </welcome-file-list>
 </web-app>
