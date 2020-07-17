@@ -15,7 +15,7 @@
     <body>
         <form action="SearchController" method="POST">
             <h2 style="text-align: center">Chọn mẫu mô hình giấy của bạn</h2>
-            <label>Chọn cấp độ kĩ năng</label><br/>
+            <label>Chọn cấp độ kĩ năng của bạn</label><br/>
             <select name="sltSkillLevel">
                 <option value="1" class="bg-super-easy">Mới bắt đầu</option>
                 <option value="2" class="bg-easy">Tàm tạm</option>
@@ -32,7 +32,7 @@
                 <option value="5" class="bg-super-hard">Cực khó</option>
             </select><br/>
             <br/> <label>Thời gian bạn có để làm mô hình (giờ)</label><br/>
-            <input type="number" name="txtHour" min="0"/><br/><br/>
+            <input type="number" name="txtHour" min="1"/><br/><br/>
             <input type="submit" value="Search"/>
         </form>
         <c:if test="${not empty requestScope.LISTMODELS}">
@@ -43,7 +43,7 @@
                     <div>  <img src="${model.imageSrc}" width="100px" height="100px"/></div>
                     <div>${model.name}</div>
                     <div>Độ khó: ${model.difficulty}</div>
-                    <div>Thời gian: ${model.totalHour}</div>
+                    <div>Thời gian: ${model.totalHour} h</div>
                     <div>
                         <form action="ViewDetailController" method="POST">
                             <input type="hidden" value="${model.link}" name="modelLink"/>

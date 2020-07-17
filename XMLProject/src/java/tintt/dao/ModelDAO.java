@@ -123,7 +123,7 @@ public class ModelDAO extends BaseDAO<Model, Integer> {
             return lowestDifficulty.getDifficulty().intValue();
         }
 
-        for (int i = 1; i < estimation.getDifficultyEstimation().size(); ++i) {
+        for (int i = 1; i < estimation.getDifficultyEstimation().size(); i++) {
             DifficultyEstimation de = estimation.getDifficultyEstimation().get(i);
             if (partsPerSheet <= de.getMaxPartsPerSheet().doubleValue()) {
                 return de.getDifficulty().intValue();

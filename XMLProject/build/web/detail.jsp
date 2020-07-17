@@ -31,7 +31,7 @@
                     <div style="float:left;padding-right: 20px;">
                         <div class="margin">Tên:</div>
                         <div class="margin">Số tờ:</div>
-                        <div class="margin">Số part:</div>
+                        <div class="margin">Số chi tiết:</div>
                         <div class="margin">Độ khó:</div>
                         <div class="margin">Hướng dẫn:</div>
                     </div>
