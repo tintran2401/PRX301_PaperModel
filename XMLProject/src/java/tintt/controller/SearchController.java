@@ -6,15 +6,12 @@
 package tintt.controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import tintt.entities.Model;
 import tintt.entities.ModelExtended;
 import tintt.services.ModelServices;
 
@@ -47,9 +44,8 @@ public class SearchController extends HttpServlet {
 
             ModelServices service = new ModelServices();
             List<ModelExtended> models = new ArrayList<>();
-
             models = service.getModelByMakingTime(difficulty, skill, hour);
-            if (!models.isEmpty()) {
+            if (models != null) {
                 request.setAttribute("LISTMODELS", models);
                 url = SEARCH;
             }

@@ -3,15 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/CN8/XML/XMLProject/web/home.jsp</file>
-            <file>file:/D:/CN8/XML/XMLProject/src/java/tintt/listener/PaperModelServletListener.java</file>
-            <file>file:/D:/CN8/XML/XMLProject/web/WEB-INF/config/estimation-for-model.xml</file>
-            <file>file:/D:/CN8/XML/XMLProject/web/WEB-INF/config/estimation-for-model.xsd</file>
-            <file>file:/D:/CN8/XML/XMLProject/src/java/tintt/services/ModelServices.java</file>
-            <file>file:/D:/CN8/XML/XMLProject/src/java/tintt/difficulti_estimation/ModelEstimation.java</file>
-            <file>file:/D:/CN8/XML/XMLProject/src/java/tintt/dao/ModelDAO.java</file>
-            <file>file:/D:/CN8/XML/XMLProject/src/java/tintt/controller/SearchController.java</file>
-            <file>file:/D:/CN8/XML/XMLProject/web/detail.jsp</file>
+            <file>file:/D:/CN8/XML/PRX301_Project/XMLProject/web/detail.jsp</file>
+            <file>file:/D:/CN8/XML/PRX301_Project/XMLProject/src/java/tintt/services/ModelServices.java</file>
+            <file>file:/D:/CN8/XML/PRX301_Project/XMLProject/src/java/tintt/controller/SearchController.java</file>
+            <file>file:/D:/CN8/XML/PRX301_Project/XMLProject/web/home.jsp</file>
         </group>
     </open-files>
 </project-private>

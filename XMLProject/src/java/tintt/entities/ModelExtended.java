@@ -5,8 +5,6 @@
  */
 package tintt.entities;
 
-import java.util.Collection;
-
 /**
  *
  * @author TiTi
@@ -30,4 +28,4 @@ public class ModelExtended extends Model{
         this.totalHour = totalHour;
     }
     
-}
+    }

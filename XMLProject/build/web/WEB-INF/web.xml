@@ -12,6 +12,10 @@
         <servlet-name>ViewDetailController</servlet-name>
         <servlet-class>tintt.controller.ViewDetailController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CrawlerServlet</servlet-name>
+        <servlet-class>tintt.controller.CrawlerServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SearchController</servlet-name>
         <url-pattern>/SearchController</url-pattern>
@@ -19,6 +23,10 @@
     <servlet-mapping>
         <servlet-name>ViewDetailController</servlet-name>
         <url-pattern>/ViewDetailController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CrawlerServlet</servlet-name>
+        <url-pattern>/CrawlerServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

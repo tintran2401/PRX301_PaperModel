@@ -7,12 +7,15 @@ package tintt.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import tintt.dao.ModelDAO;
 import tintt.entities.Model;
+import tintt.services.ModelServices;
 
 /**
  *
@@ -36,17 +39,23 @@ public class ViewDetailController extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         String url = ERROR;
+        List<Model> relatedModels = new ArrayList<>();
         String link = request.getParameter("modelLink");
         try {
             ModelDAO dao = new ModelDAO();
+            ModelServices services = new ModelServices();
             Model model = dao.getModelByLink(link);
             if (model != null) {
-                if (model.getNumOfParts() == null) {
-                    model.setNumOfParts(0);
-                }
+//                if (model.getNumOfParts() == null) {
+//                    model.setNumOfParts(0);
+//                }
+                //related model
+                relatedModels = services.getModelByTagAndCategory(model.getCategoryId().getId());
                 request.setAttribute("MODELDETAIL", model);
+                request.setAttribute("RELATEDMODELS", relatedModels);
                 url = DETAIL;
             }
+
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

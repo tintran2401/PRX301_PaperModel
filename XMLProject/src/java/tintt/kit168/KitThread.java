@@ -20,7 +20,7 @@ import tintt.crawler.BaseThread;
 public class KitThread extends BaseThread implements Runnable {
 
     private final String URL = URLConstants.KIT168;
-    private ServletContext context;
+    private final ServletContext context;
 
     public KitThread(ServletContext context) {
         this.context = context;

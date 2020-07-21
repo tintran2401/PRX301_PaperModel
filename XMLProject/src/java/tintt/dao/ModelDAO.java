@@ -148,4 +148,24 @@ public class ModelDAO extends BaseDAO<Model, Integer> {
         }
         return 0;
     }
+
+    public List<Model> getModelsByTagAndCate(String categoryId) {
+        EntityManager em = DBUtils.getEntityManager();
+        try {
+            EntityTransaction transaction = em.getTransaction();
+            transaction.begin();
+            List<Model> models = em.createNamedQuery("Model.findByTagAndCategory")
+                    .setParameter("categoryId", categoryId)
+                    .getResultList();
+            System.out.println("size: "+models.size());
+            return models;
+        } catch (Exception e) {
+            Logger.getLogger(ModelDAO.class.getName()).log(Level.SEVERE, null, e);
+        } finally {
+            if (em != null) {
+                em.close();
+            }
+        }
+        return null;
+    }
 }

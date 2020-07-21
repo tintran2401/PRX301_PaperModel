@@ -50,7 +50,7 @@ public class KitModelCrawler extends BaseCrawler {
         Model model = null;
         try {
             reader = getBufferedReaderForUrl(pageUrl);
-            System.out.println("page: "+pageUrl);
+            System.out.println("page: " + pageUrl);
             String document = getModelDocument(reader);
             stAXParserForModel(document);
             return stAXParserForModel(document);
@@ -72,6 +72,7 @@ public class KitModelCrawler extends BaseCrawler {
         Integer numOfParts = null;
         Boolean hasInstruction = hasInstruction(eventReader);
         String link = pageUrl;
+        System.out.println("link: " + link);
         List<Tag> tags = getTags(eventReader);
         Integer difficulty = 0;
 

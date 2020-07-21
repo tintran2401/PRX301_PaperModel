@@ -8,11 +8,7 @@ package tintt.services;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import javax.servlet.ServletContext;
 import tintt.dao.ModelDAO;
 import tintt.entities.Model;
 import tintt.entities.ModelExtended;
@@ -40,16 +36,16 @@ public class ModelServices {
                 hourPerSheet = TIMECONSTANT * difficulty / skillLevel;
                 totalHours = hourPerSheet * numOfSheet;
                 totalHours = Double.valueOf(df.format(totalHours));
-                if (totalHours <= hour) {
+                if ((model.getDifficulty() + 1) / 2 == difficulty && totalHours <= hour) {
                     ModelExtended modelExtend = new ModelExtended(model, totalHours);
                     resultList.add(modelExtend);
                 }
             } else {
                 double partPerSheet = numOfPart / numOfSheet;
-                hourPerSheet = TIMECONSTANT * difficulty / skillLevel * partPerSheet / AVGPARTPERSHEET;
+                hourPerSheet = TIMECONSTANT * (difficulty / skillLevel) * (partPerSheet / AVGPARTPERSHEET);
                 totalHours = hourPerSheet * numOfSheet;
                 totalHours = Double.valueOf(df.format(totalHours));
-                if (totalHours <= hour) {
+                if ((model.getDifficulty() + 1) / 2 == difficulty && totalHours <= hour) {
                     ModelExtended modelExtend = new ModelExtended(model, totalHours);
                     resultList.add(modelExtend);
                 }
@@ -57,6 +53,18 @@ public class ModelServices {
         }
         Collections.sort(resultList, (ModelExtended o1, ModelExtended o2)
                 -> Double.valueOf(o2.getTotalHour()).compareTo(o1.getTotalHour()));
+        return resultList;
+    }
+
+    public List<Model> getModelByTagAndCategory(String category) {
+        List<Model> resultList = new ArrayList<>();
+        ModelDAO dao = new ModelDAO();
+        for (Model model : dao.getModelsByTagAndCate(category)) {
+            resultList.add(model);
+            if (resultList.size() == 200) {
+                break;
+            }
+        }
         return resultList;
     }
 

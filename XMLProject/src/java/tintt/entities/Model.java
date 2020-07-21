@@ -39,6 +39,8 @@ import javax.xml.bind.annotation.XmlTransient;
     , @NamedQuery(name = "Model.findByDifficulty", query = "SELECT m FROM Model m WHERE m.difficulty = :difficulty")
     , @NamedQuery(name = "Model.findByImageSrc", query = "SELECT m FROM Model m WHERE m.imageSrc = :imageSrc")
     , @NamedQuery(name = "Model.findByLink", query = "SELECT m FROM Model m WHERE m.link = :link")
+         , @NamedQuery(name = "Model.findByTagAndCategory", query = "SELECT m FROM Model m INNER JOIN m.categoryId AS c WHERE c.id = :categoryId"
+                 + "")
     , @NamedQuery(name = "Model.findByHasInstruction", query = "SELECT m FROM Model m WHERE m.hasInstruction = :hasInstruction")})
 public class Model implements Serializable {
 
