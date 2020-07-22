@@ -10,7 +10,7 @@ import java.util.Map;
 
 /**
  *
- * @author TinTT
+ * @author TiTi
  */
 public class TestChecker {
     public static void main(String[] args) {

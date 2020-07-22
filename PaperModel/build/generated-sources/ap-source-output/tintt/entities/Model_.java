@@ -7,7 +7,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 import tintt.entities.Category;
 import tintt.entities.Tag;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2020-07-22T13:20:19")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2020-07-22T14:21:54")
 @StaticMetamodel(Model.class)
 public class Model_ { 
 

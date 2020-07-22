@@ -12,7 +12,7 @@ import static tintt.utils.xmlchecker.SyntaxState.*;
 
 /**
  *
- * @author TinTT
+ * @author TiTi
  */
 public class XmlSyntaxChecker {
     

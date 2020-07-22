@@ -9,7 +9,7 @@ import java.util.UUID;
 
 /**
  *
- * @author NhanTT
+ * @author TiTi
  */
 public class TagHelper {
     public synchronized static String generateUUID() {

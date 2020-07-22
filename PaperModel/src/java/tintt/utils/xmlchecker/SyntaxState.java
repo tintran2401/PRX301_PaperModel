@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author TinTT
+ * @author TiTi
  */
 public class SyntaxState {
     
