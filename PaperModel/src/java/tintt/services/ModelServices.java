@@ -42,7 +42,7 @@ public class ModelServices {
                 }
             } else {
                 double partPerSheet = numOfPart / numOfSheet;
-                hourPerSheet = TIMECONSTANT * (difficulty / skillLevel) * (partPerSheet / AVGPARTPERSHEET);
+                hourPerSheet = TIMECONSTANT * difficulty / skillLevel * partPerSheet / AVGPARTPERSHEET;
                 totalHours = hourPerSheet * numOfSheet;
                 totalHours = Double.valueOf(df.format(totalHours));
                 if ((model.getDifficulty() + 1) / 2 == difficulty && totalHours <= hour) {
