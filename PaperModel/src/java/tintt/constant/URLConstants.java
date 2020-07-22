@@ -10,8 +10,9 @@ package tintt.constant;
  * @author TiTi
  */
 public class URLConstants {
+
     public static String KIT168 = "https://kit168.com/";
+    public static String PAPERCRAFTMUSEUM = "http://www.papercraftmuseum.com";
     public static String PAPERCRAFTMUSEUM_CATEGORIES = "http://www.papercraftmuseum.com/categories";
     public static String PAPERCRAFTMUSEUM_MUSEUM = "http://www.papercraftmuseum.com/museum";
-    public static String PAPERCRAFTMUSEUM = "http://www.papercraftmuseum.com";
 }

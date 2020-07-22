@@ -16,7 +16,6 @@ import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.events.EndElement;
 import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
-import static org.eclipse.persistence.queries.ObjectBuildingQuery.LOCK;
 import tintt.constant.AppConstant;
 import tintt.constant.URLConstants;
 import tintt.crawler.BaseCrawler;
