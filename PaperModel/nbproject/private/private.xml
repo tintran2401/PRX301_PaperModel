@@ -2,6 +2,10 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/D:/CN8/XML/PRX301_Project/PaperModel/web/WEB-INF/config/estimation-for-model.xsd</file>
+            <file>file:/D:/CN8/XML/PRX301_Project/PaperModel/web/home.jsp</file>
+            <file>file:/D:/CN8/XML/PRX301_Project/PaperModel/src/java/tintt/services/ModelServices.java</file>
+        </group>
     </open-files>
 </project-private>

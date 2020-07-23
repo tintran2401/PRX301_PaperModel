@@ -19,8 +19,8 @@ import tintt.entities.ModelExtended;
  */
 public class ModelServices {
 
-    private static final double AVGPARTPERSHEET = 8.4;
-    private static final double TIMECONSTANT = 0.75;
+    private static final double AVGPARTPERSHEET = 10.15;
+    private static final double TIMECONSTANT = 0.337;
 
     public List<ModelExtended> getModelByMakingTime(int difficulty, int skillLevel, double hour) {
         double hourPerSheet, totalHours;
